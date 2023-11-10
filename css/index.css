@@ -426,7 +426,6 @@ strong{
 
 .section-informacoes h2, p {
     max-width: 550px;
-    margin: 15px 0; 
 }
 
 form {
@@ -520,3 +519,4 @@ hr {
 .redes-sociais a:hover img {
     filter: invert(100%);
 }
+
