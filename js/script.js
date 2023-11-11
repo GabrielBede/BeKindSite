@@ -1,6 +1,18 @@
 // Biblioteca de icones "Feather icons"
 feather.replace();
 
+//Função para o header -> menu
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "../img/menu.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "../img/x.svg";
+    }
+}
+
 // Animação para os valores do impacto fazerem uma contagem até o valor determinado
 const animateCounters = () => {
     const counters = document.querySelectorAll('.value');

@@ -11,19 +11,45 @@
 
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../img/LogoBeKind.png" draggable="false"></a>
-        <nav>
-            <div class="marker"></div>
-            <a href="../index.html">Home</a>
-            <a href="./sobrenos.html">Sobre nós</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./voluntario-cad.html">Voluntário</a>
-            <a href="./eventos.html">Eventos</a>
-            <a href="./loja.html">Loja</a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/LogoBeKind.png" alt="Logo BeKind" draggable="true"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./sobrenos.html" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link"> Blog</a></li>
+                    <li class="nav-item"><a href="./voluntario-cad.html" class="nav-link"> Voluntário</a></li>
+                    <li class="nav-item"><a href="./eventos.html" class="nav-link"> Eventos</a></li>
+                    <li class="nav-item"><a href="./loja.html" class="nav-link"> Loja</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Doe</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu.svg" alt=""></button>
+            </div>
         </nav>
-        <a class="doe" href="#">Doe</a>
-        
-    </header>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Voluntário</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Eventos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Loja</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Doe</a></button>
+            </div>
+        </div>
+        </header>
+
+    <div class="conteudo">
 
     <h2>Nossos Produtos</h2>
 
@@ -73,8 +99,10 @@
             <a href="#"><img src="../img/Icon-Linkedin.svg" alt="Logo do Linkedin"></a>
             <a href="#"><img src="../img/Icon-Instagram.svg" alt="Logo do Instagram"></a>
         </div>
+    
     </footer>
+</div>
 
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

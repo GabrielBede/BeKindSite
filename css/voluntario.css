@@ -38,61 +38,68 @@ body{
     justify-content: center;
 }
 
-header{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    background-color: white;
-
+header {
+    background-color: var(--cor-branca);
 }
 
-.doe {
-    background-color: var(--cor-primaria);
-    text-decoration: none;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
-    font-weight: 700;
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 12rem;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
     width: 100px;
 }
 
-nav {
-    position: relative;
+.nav-list {
     display: flex;
+    align-items: center;
 }
 
-nav a {
-    position: relative;
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
     margin: 0 20px;
-    font-size: 0.9em;
-    font-weight: 500;
-    color: var(--cor-texto);
+}
+
+.nav-link {
     text-decoration: none;
-}
-
-nav a.active {
-    color: var(--cor-primaria);
-}
-
-nav a:not(.active) {
+    font-size: 0.9em;
     color: var(--cor-texto);
+    font-weight: 500;
 }
 
-nav #marker {
-    position: absolute;
-    height: 2px;
-    width: 0;
-    background: var(--cor-primaria);
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-    border-radius: 5px;
+.login-button button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 1.25em;
+
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 h1{
@@ -154,7 +161,6 @@ h1{
 }
 
 
-/*Footer - BeKind*/
 footer {
     position: relative;
     z-index: 2;
@@ -165,8 +171,9 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin: 15px 0 ;
+footer .logo {
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -190,4 +197,45 @@ hr {
 
 .redes-sociais a:hover img {
     filter: invert(100%);
+}
+
+@media screen and (max-width: 1160px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
 }

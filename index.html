@@ -11,20 +11,46 @@
 
 <body>
     <header>
-        <a href="#"><img class="logo" src="./img/LogoBeKind.png" draggable="false"></a>
-        <nav>
-            <div class="marker"></div>
-            <a href="#">Home</a>
-            <a href="./pages/sobrenos.html">Sobre nós</a>
-            <a href="./pages/blog.html">Blog</a>
-            <a href="./pages/voluntario-cad.html">Voluntário</a>
-            <a href="./pages/eventos.html">Eventos</a>
-            <a href="./pages/loja.html">Loja</a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/LogoBeKind.png" alt="Logo BeKind" draggable="true"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./pages/sobrenos.html" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="./pages/blog.html" class="nav-link"> Blog</a></li>
+                    <li class="nav-item"><a href="./pages/voluntario-cad.html" class="nav-link"> Voluntário</a></li>
+                    <li class="nav-item"><a href="./pages/eventos.html" class="nav-link"> Eventos</a></li>
+                    <li class="nav-item"><a href="./pages/loja.html" class="nav-link"> Loja</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Doe</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu.svg" alt=""></button>
+            </div>
         </nav>
-        <a class="doe" href="#">Doe</a>
-        
-    </header>
-    
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./pages/sobrenos.html" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="./pages/blog.html" class="nav-link"> Blog</a></li>
+                <li class="nav-item"><a href="./pages/voluntario-cad.html" class="nav-link"> Voluntário</a></li>
+                <li class="nav-item"><a href="./pages/eventos.html" class="nav-link"> Eventos</a></li>
+                <li class="nav-item"><a href="./pages/loja.html" class="nav-link"> Loja</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Doe</a></button>
+            </div>
+        </div>
+        </header>
+
+    <div class="conteudo">
+
     <section class="section-apresentacao">
         <div>
             <h1>Seja <strong>gentil</strong> e doe <br/> para quem precisa</h1>
@@ -32,7 +58,7 @@
             <a href="#" class="btn-voluntario">Seja voluntário!</a>
         </div>
         <div class="box-img-main">
-            <img class="aplicativo" src="./img/Aplicativo.png" alt="Imagem do aplicativo - BeKind">
+            <img class="aplicativo" src="./img/Aplicativo.png" alt="Imagem do aplicativo - BeKind" draggable="false">
         </div>
     </section>
 
@@ -209,7 +235,7 @@
 
     <footer>
         <hr>
-        <img class="logo" src="./img/LogoBeKindPreta.png" alt="image">
+        <img class="logo" src="./img/LogoBeKindPreta.png" alt="image" draggable="true">
         <p>Copyright by © BeKind.<br/> Todos os direitos reservados</p>
 
         <div class="redes-sociais">
@@ -219,7 +245,9 @@
             <a href="#"><img src="./img/Icon-Instagram.svg" alt="svg"></a>
         </div>
 
+    
     </footer>
+</div>
 
 
 
