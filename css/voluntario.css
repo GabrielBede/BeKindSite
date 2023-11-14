@@ -30,12 +30,16 @@
     border: 0px solid var(--cor-branca);
 }
 
-body{
+body {
     min-height: 20vh;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 header {
@@ -238,4 +242,20 @@ hr {
         display: block;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .single-input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .single-input input {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 15px 130px;
+    }
 }
