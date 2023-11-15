@@ -127,14 +127,22 @@ text {
 
 p, b {
     margin-top: 10px;
+    max-width: 885px;
 }
 
 .post {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 75%;
+    width: 90%;
     margin: 25px;
+}
+
+.post img {
+    border-radius: 10px;
+    width: 955px;
+    height: 485px;
+    object-fit: fill;
 }
 
 
@@ -155,7 +163,7 @@ div.descricao {
     margin-top: 20px;
 }
 
-.btn-vermais {
+#btn-vermais {
     background-color: var(--cor-branca);
     color: var(--cor-texto);
     text-align: center;
@@ -167,6 +175,7 @@ div.descricao {
     width: 150px;
     margin-top: 20px;
     border: 1px solid var(--cor-texto);
+    cursor: pointer;
 }
 
 
@@ -248,3 +257,4 @@ hr {
     }
 
 }
+
