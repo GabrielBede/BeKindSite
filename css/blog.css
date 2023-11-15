@@ -140,11 +140,10 @@ p, b {
 
 .post img {
     border-radius: 10px;
-    width: 955px;
-    height: 485px;
-    object-fit: fill;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-
 
 div.descricao {
     margin-top: 2px;
