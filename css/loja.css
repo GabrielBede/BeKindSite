@@ -119,6 +119,14 @@ h2 {
     margin-top: 50px;
 }
 
+p {
+    color: var(--cor-texto);
+}
+
+a {
+    text-decoration: none;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;

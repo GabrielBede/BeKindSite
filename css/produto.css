@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor-primaria: #007CE0;
+    --cor-texto: #252525;
+    --cor-neutra: #7E7E7E;
+    --cor-cinza: #EEEEEE;
+    --cor-branca: #FFFFFF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--cor-branca);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--cor-neutra);
+    border-radius: 10px;
+    border: 0px solid var(--cor-branca);
+}
+
+.conteudo {
+    display: grid;
+    grid-template-areas: "Imagem Descricao";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80vh;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--cor-branca);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 12rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 1.25em;
+
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+h3 {
+    color: var(--cor-primaria);
+}
+
+.conteudo p {
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+.descricao {
+    max-width: 650px;
+
+    padding: 64px;
+    grid-area: Descricao;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    gap: 15px;
+}
+  
+.imagem {
+    grid-area: Imagem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    border: 1px solid var(--cor-neutra);
+    padding: 10px 25px;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+input {
+    color: var(--cor-branca);
+    margin-top: 50px;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+
+
+footer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+footer .logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 50px;
+    width: 35%;
+    height: 1px;
+    background-color: var(--cor-texto);
+    margin-bottom: 30px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.redes-sociais a {
+    margin: 3px;
+}
+
+
+.redes-sociais a:hover img {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 1160px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.8fr;
+        grid-template-areas:
+          "Imagem"
+          "Descricao";
+      }
+      aside {
+        border-right: none;
+        padding: 32px 12px;
+      }
+    
+      nav {
+        overflow-y: visible;
+        padding: 22px;
+      }
+}

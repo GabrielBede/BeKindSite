@@ -131,13 +131,17 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 83%;
+    height: auto;
     border-radius: 10px;
     text-align: center;
 }
 
 .section-eventos img {
+    width: auto;
+    height: 550px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 
@@ -291,6 +295,22 @@ hr {
 
 
 @media screen and (max-width: 830px) {
+    .section-eventos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .section-eventos img {
+        width: auto;
+        height: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    
     .eventos {
         width: 100px;
         justify-content: center;

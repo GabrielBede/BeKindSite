@@ -36,8 +36,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 .conteudo {
     display: flex;
     flex-direction: column;
