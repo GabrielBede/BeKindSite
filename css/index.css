@@ -40,6 +40,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
 }
 
 header {
@@ -264,7 +266,7 @@ strong{
 .impacto .imp2,
 .impacto .imp3,
 .impacto .imp4 {
-    flex: 1; 
+    width: 100px; 
     margin: 60px;
 }
 
@@ -640,12 +642,12 @@ hr {
     .impacto .imp2,
     .impacto .imp3,
     .impacto .imp4 {
-        flex: 1; 
+       width: 100px;
         margin: 50px;
     }
 
     .img-app {
-        width: 80%;
+        width: 95%;
     }
 
     .feedbacks {
@@ -659,8 +661,22 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Tamanho menor para h1 em telas menores */
+    }
 
+    h2 {
+        font-size: 1.2em;
+    }
 
+    p {
+        font-size: 14px;
+    }
+
+    .section-apresentacao p {
+        width: 300px;
+    }
+    
     .single-input {
         width: 100%;
         box-sizing: border-box;
