@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_br">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Header responsivo -->
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -30,7 +32,7 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="./img/menu.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="./img/menu.svg" alt="Menu hamburguer"></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -47,211 +49,165 @@
                 <button><a href="#">Doe</a></button>
             </div>
         </div>
-        </header>
+    </header>
 
     <div class="conteudo">
-
-    <section class="section-apresentacao">
-        <div>
-            <h1>Seja <strong>gentil</strong> e doe <br/> para quem precisa</h1>
-            <p>Juntos, podemos fazer a diferença. Descubra como você pode se tornar parte ativa da mudança que queremos ver no mundo.</p>
-            <a href="#" class="btn-voluntario">Seja voluntário!</a>
-        </div>
-        <div class="box-img-main">
-            <img class="aplicativo" src="./img/Aplicativo.png" alt="Imagem do aplicativo - BeKind" draggable="false">
-        </div>
-    </section>
-
-
-
-
-    <section class="section-impacto">
-        <div class="text-impacto">
-            <h2>Nosso impacto na comunidade</h2>
-            <p>Um pequeno ato de generosidade pode fazer toda a diferença.</p>
-        </div>
-
-        <div class="impacto">
-            <div class="imp1">
-                <h1><div class="value" contador-impacto="670">0</div></h1>
-                <h3>Doações<br/> recebidas</h3>
+        <!-- Section - Apresentção -->
+        <section class="section-apresentacao">
+            <div>
+                <h1>Seja <strong>gentil</strong> e doe <br /> para quem precisa</h1>
+                <p>Juntos, podemos fazer a diferença. Descubra como você pode se tornar parte ativa da mudança que
+                    queremos ver no mundo.</p>
+                <a href="#" class="btn-voluntario">Seja voluntário!</a>
             </div>
-            <div class="imp2">
-                <h1><div class="value" contador-impacto="1500">0</div></h1>
-                <h3>Dinheiro<br/> arrecadado</h3>
+            <div class="box-img-main">
+                <img class="aplicativo" src="./img/Aplicativo.png" alt="Imagem do aplicativo - BeKind"
+                draggable="false">
             </div>
-            <div class="imp3">
-                <h1><div class="value" contador-impacto="11">0</div></h1>
-                <h3>ONGs<br/> parceiras</h3>
-            </div>
-            <div class="imp4">
-                <h1><div class="value" contador-impacto="500">0</div></h1>
-                <h3>Pessoas<br/> ajudadas</h3>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="section-download">
-        <h2>Baixe nosso aplicativo</h2>
-        <div class="btns-download">
-            <a href="#">
-                <img src="./img/Btn-Google-Play.png" alt="image">
-            </a>
-            <a href="#">
-                <img src="./img/Btn-Apple-Store.png" alt="image">
-            </a>
-        </div>
-            <img class="img-app" src="./img/Aplicativo-Download.png" alt="image/png">
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="section-feedback">
-        <h2>Avaliações sobre o nosso projeto</h2>
-
-        <div class="feedbacks">
-            <div class="feedback">
-                <div class="feed">
-                    <img src="./img/Aspas-Duplas.png" alt="Aspas duplas">
-                    <p>Parabéns pela iniciativa e por se proporem a apoiar a transformação da realidade de pessoas em situação de rua.</p>
-                </div>
-
-                <div class="comentario">
-                    <img src="./img/Perfil-SpInvisivel.png" alt="foto-cmnt">
-                    <div class="user">
-                        <p>SP Invisivel</p>
-                        <small>Organização não-governamental</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feedback">
-                <div class="feed">
-                    <img src="./img/Aspas-Duplas.png" alt="Aspas duplas">
-                    <p>Quero parabenizar vocês pelo incrível projeto. É uma iniciativa inspiradora e necessária para a sociedade.</p>
-                </div>
-
-                <div class="comentario">
-                    <img src="./img/Perfil-Advogado.png" alt="foto-cmnt">
-                    <div class="user">
-                        <p>Marcos Mendes</p>
-                        <small>Advogado</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feedback">
-                <div class="feed">
-                    <img src="./img/Aspas-Duplas.png" alt="Aspas duplas">
-                    <p>Sensacional a plataforma, ajudar muito a encontrarmos quem realmente está precisando de ajuda.</p>
-                </div>
-
-                <div class="comentario">
-                    <img src="./img/Perfil-AnjosDaRua.png" alt="foto-cmnt">
-                    <div class="user">
-                        <p>Anjos da Rua</p>
-                        <small>Organização não-governamental</small>
-                    </div>
-                </div>
-            </div>
-
-            
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="section-informacoes">
-        <h2>Se mantenha informado</h2>
-        <p> Faça parte de uma transformação positiva na vida das pessoas em situação de rua. Inscreva-se e se mantenha informado sobre as últimas atualizações, eventos e oportunidades do projeto BeKind.</p>
-            
-        <form method="post" action="./model/inserirVoluntario.php">
+        </section>
         
-            <div class="single-input">
-                <span><i class="icone" data-feather="user"></i></span>
-                <input type="text" name="cxnome" placeholder="Nome" autocomplete="off" required>
+        <!-- Section - Impacto da BeKind -->
+        <section class="section-impacto">
+            <div class="text-impacto">
+                <h2>Nosso impacto na comunidade</h2>
+                <p>Um pequeno ato de generosidade pode fazer toda a diferença.</p>
             </div>
-        
-            <div class="single-input">
-                <span><i class="icone" data-feather="at-sign"></i></span>
-                <input type="email" name="cxemail" placeholder="Email" autocomplete="off" required>
+
+            <div class="impacto">
+                <div class="imp1">
+                    <h1>
+                        <div class="value" contador-impacto="670">0</div>
+                    </h1>
+                    <h3>Doações<br /> recebidas</h3>
+                </div>
+                <div class="imp2">
+                    <h1>
+                        <div class="value" contador-impacto="1500">0</div>
+                    </h1>
+                    <h3>Dinheiro<br /> arrecadado</h3>
+                </div>
+                <div class="imp3">
+                    <h1>
+                        <div class="value" contador-impacto="11">0</div>
+                    </h1>
+                    <h3>ONGs<br /> parceiras</h3>
+                </div>
+                <div class="imp4">
+                    <h1>
+                        <div class="value" contador-impacto="500">0</div>
+                    </h1>
+                    <h3>Pessoas<br /> ajudadas</h3>
+                </div>
             </div>
-    
-              <input type="submit" class="btn" value="Cadastrar" />
-    
+        </section>
+
+        <!-- Section - Download -->
+        <section class="section-download">
+            <h2>Baixe nosso aplicativo</h2>
+            <div class="btns-download">
+                <a href="#">
+                    <img src="./img/Btn-Google-Play.png" alt="Download - Google Play">
+                </a>
+                <a href="#">
+                    <img src="./img/Btn-Apple-Store.png" alt="Download - Apple Store">
+                </a>
+            </div>
+            <img class="img-app" src="./img/Aplicativo-Download.png" alt="Imagem do aplicativo - BeKind">
+        </section>
+
+        <!-- Section - Feedbacks -->
+        <section class="section-feedback">
+            <h2>Avaliações sobre o nosso projeto</h2>
+
+            <div class="feedbacks">
+                <div class="feedback">
+                    <div class="feed">
+                        <img src="./img/Aspas-Duplas.png" alt="Aspas duplas">
+                        <p>Parabéns pela iniciativa e por se proporem a apoiar a transformação da realidade de pessoas
+                            em situação de rua.</p>
+                    </div>
+
+                    <div class="comentario">
+                        <img src="./img/Perfil-SpInvisivel.png" alt="Foto de perfil - SP Invisivel">
+                        <div class="user">
+                            <p>SP Invisivel</p>
+                            <small>Organização não-governamental</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <div class="feed">
+                        <img src="./img/Aspas-Duplas.png" alt="Aspas duplas">
+                        <p>Quero parabenizar vocês pelo incrível projeto. É uma iniciativa inspiradora e necessária para
+                            a sociedade.</p>
+                    </div>
+
+                    <div class="comentario">
+                        <img src="./img/Perfil-Advogado.png" alt="Foto de perfil - Advogado">
+                        <div class="user">
+                            <p>Marcos Mendes</p>
+                            <small>Advogado</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <div class="feed">
+                        <img src="./img/Aspas-Duplas.png" alt="Aspas duplas">
+                        <p>Sensacional a plataforma, ajudar muito a encontrarmos quem realmente está precisando de
+                            ajuda.</p>
+                    </div>
+
+                    <div class="comentario">
+                        <img src="./img/Perfil-AnjosDaRua.png" alt="Foto de perfil - Anjos da Rua">
+                        <div class="user">
+                            <p>Anjos da Rua</p>
+                            <small>Organização não-governamental</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section - Mais informações -->
+        <section class="section-informacoes">
+            <h2>Se mantenha informado</h2>
+            <p> Faça parte de uma transformação positiva na vida das pessoas em situação de rua. Inscreva-se e se
+                mantenha informado sobre as últimas atualizações, eventos e oportunidades do projeto BeKind.</p>
+
+            <form method="post" action="./model/inserirVoluntario.php">
+
+                <div class="single-input">
+                    <span><i class="icone" data-feather="user"></i></span>
+                    <input type="text" name="cxnome" placeholder="Nome" autocomplete="off" required>
+                </div>
+
+                <div class="single-input">
+                    <span><i class="icone" data-feather="at-sign"></i></span>
+                    <input type="email" name="cxemail" placeholder="Email" autocomplete="off" required>
+                </div>
+
+                <input type="submit" class="btn" value="Cadastrar" />
+
             </form>
-    </section>
+        </section>
 
+        <!-- Footer - BeKind -->
+        <footer>
+            <hr>
+            <img class="logo" src="./img/LogoBeKindPreta.png" alt="Logo BeKind - Preto" draggable="true">
+            <p>Copyright by © BeKind.<br /> Todos os direitos reservados</p>
 
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <hr>
-        <img class="logo" src="./img/LogoBeKindPreta.png" alt="image" draggable="true">
-        <p>Copyright by © BeKind.<br/> Todos os direitos reservados</p>
-
-        <div class="redes-sociais">
-            <a href="#"><img src="./img/Icon-Facebook.svg" alt="svg"></a>
-            <a href="#"><img src="./img/Icon-Twitter.svg" alt="svg"></a>
-            <a href="#"><img src="./img/Icon-Linkedin.svg" alt="svg"></a>
-            <a href="#"><img src="./img/Icon-Instagram.svg" alt="svg"></a>
-        </div>
-
-    
-    </footer>
-</div>
-
-
+            <div class="redes-sociais">
+                <a href="#"><img src="./img/Icon-Facebook.svg" alt="svg"></a>
+                <a href="#"><img src="./img/Icon-Twitter.svg" alt="svg"></a>
+                <a href="#"><img src="./img/Icon-Linkedin.svg" alt="svg"></a>
+                <a href="#"><img src="./img/Icon-Instagram.svg" alt="svg"></a>
+            </div>
+        </footer>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
