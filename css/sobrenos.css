@@ -117,17 +117,18 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
 strong {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: 700;   
 }
 
 .capa {
     position: relative;
+    width: 85%;
 }
 
 .capa .capa-conteudo {
@@ -140,8 +141,7 @@ strong {
     width: 100%;
     height: 590px;
     object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
 }
 
 .capa .conteudo {
@@ -155,6 +155,10 @@ strong {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.capa .conteudo p {
+    width: 60%;
 }
 
 .btn-ler {
@@ -195,7 +199,7 @@ strong {
     overflow: hidden;
     background: var(--cor-cinza);
     border-radius: 15px;
-    width: 80%;
+    width: 85%;
     height: 90px;
   }
   
@@ -245,6 +249,8 @@ strong {
 
 .nosso-grupo p {
     text-align: center;
+    max-width: 80%;
+
 }
 
 
@@ -255,21 +261,20 @@ strong {
     display: flex;
     width: 100%;
     margin-top: 26px;
+    flex-wrap: wrap;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 420px;
-    width: 203px;
+    width: auto;
     border-radius: 25px;
     margin-left: 10px;
 }
 
 .card img{
-    width: 203px;
-    height: 269px;
+    width: 180px;
 }
 
 .card text{
@@ -280,7 +285,6 @@ strong {
     margin-top: 10px;
     color: var(--cor-primaria);
 }
-
 
 
 footer {
@@ -360,4 +364,37 @@ hr {
         display: block;
     }
 
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .card {
+        width: 20%; 
+        margin: 10px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .card {
+        width: 40%; 
+        margin: 10px;
+    }
+
+    .card img {
+        width: 100%;
+    }
 }
