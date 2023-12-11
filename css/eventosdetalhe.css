@@ -367,6 +367,20 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    .infoeventos .imagem-evento {
+        width: 80%;
+        object-fit: cover;
+        border-radius: 35px;
+        margin: 10px;
+    }
+
+    .descricao {
+        max-width: 80%;
+        text-align: justify;
+        align-items: center;
+    }
+    
+
     .btn {
         margin-top: 25px;
         padding: 15px 130px;
